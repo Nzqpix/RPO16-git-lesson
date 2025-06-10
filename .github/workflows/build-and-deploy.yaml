@@ -1,0 +1,8 @@
+#this is name of all jobs on github actions bot
+name: "build and push to dev branch"
+
+# param which describe main repository
+on:
+  push:
+    branches:
+      - "main"
