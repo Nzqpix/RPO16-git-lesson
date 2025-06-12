@@ -47,6 +47,7 @@ jobs:
 
           cp -r dist/* .
           rm -rf dist
+          rm -rf .github
 
           git add -A
           git commit -m "Build artifacts"
