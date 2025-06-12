@@ -42,7 +42,7 @@ jobs:
           git reset
 
           shopt -s extglob
-          rm -rf !(dist|.git)
+          rm -rf !(dist|.git|.github)
           shopt -u extglob
 
           cp -r dist/* .
