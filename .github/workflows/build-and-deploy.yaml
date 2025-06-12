@@ -42,12 +42,12 @@ jobs:
           git reset
 
           shopt -s extglob
-          rm -rf !(dist|.git|.github)
+          rm -rf !(dist|.git)
           shopt -u extglob
 
           cp -r dist/* .
-          rm -rf dist
           rm -rf .github
+          rm -rf dist
 
           git add -A
           git commit -m "Build artifacts"
